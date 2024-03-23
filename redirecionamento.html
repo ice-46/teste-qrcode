@@ -2,24 +2,7 @@
 <html>
 <head>
     <title>Redirecionamento de App</title>
-    <script type="text/javascript">
-        function redirecionar() {
-            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-
-            // Redirecionar para a Play Store para dispositivos Android
-            if (/android/i.test(userAgent)) {
-                window.location = "https://docs.google.com/document/d/1NizxonrD50HnpptXyk_2o-5HB8J77PVTVlACn0Dleiw/edit";
-            }
-            // Redirecionar para a App Store para dispositivos iOS
-            else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                window.location = "https://apps.apple.com/br/app/medicamentos/id1621166653";
-            }
-            // Redirecionar para um site padrão ou página de erro para outros dispositivos
-            else {
-                window.location = "https://seuwebsite.com";
-            }
-        }
-    </script>
+    
 </head>
 <body onload="redirecionar()">
 </body>
